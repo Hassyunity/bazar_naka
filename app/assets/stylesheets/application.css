@@ -4,9 +4,17 @@ header h1 {
   text-align: center;
   font-size: 24px;
   padding: 10px 0;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   margin: 0;
   color: red;
+}
+
+header {
+  background-image: url('cadi.png');
+  background-size: cover; /* Ajuste la taille de l'image pour remplir le header */
+  background-position: center; /* Centre l'image */
+  text-align: center;
+  padding: 40px 0; /* Ajuste le padding selon besoin */
 }
 
 nav {
