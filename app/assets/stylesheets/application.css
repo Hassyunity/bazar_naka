@@ -1,15 +1,58 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* app/assets/stylesheets/application.css */
+
+header h1 {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  margin: 0;
+  color: red;
+}
+
+nav {
+  background-color: red; /* Orange background */
+  padding: 10px 0;
+  text-align: center;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+  position: relative;
+  margin: 0 10px;
+  /* border: 2px solid #3399ff; */
+
+}
+
+nav ul li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #cc5200; /* Darker orange on hover */
+}
+
+nav ul li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  height: 50%;
+  border-left: 2px solid #ff6600; /* Orange separator */
+  transform: translateY(-50%) rotate(45deg); /* Incline the separator */
+}
+
+nav ul li:first-child:before {
+  display: none; /* Remove separator before the first item */
+}

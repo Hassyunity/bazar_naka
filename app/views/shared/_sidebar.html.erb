@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Leader</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><%= link_to 'Accueil', root_path %></li>
+        <li><%= link_to 'Comment payer', comment_payer_path %></li>
+        <li><%= link_to 'Nouvaute', nouvaute_path %></li>
+        <li><%= link_to 'Promotion', promotion_path %></li>
+        <li><%= link_to 'Minceur', minceur_path %></li>
+        <li><%= link_to 'Bio', bio_path %></li>
+      </ul>
+    </nav>
+  </body>
+</html>
