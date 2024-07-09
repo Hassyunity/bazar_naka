@@ -1,0 +1,32 @@
+.navbar {
+  width: 25%; 
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-bottom: 10px;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.submenu {
+  padding-left: 15px;
+}

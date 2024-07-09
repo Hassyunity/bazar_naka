@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <%= stylesheet_link_tag 'navbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+
+<div class="sidebar">
+  <ul>
+    <li>
+      <a href="#">Fruits et Légumes</a>
+      <ul class="submenu">
+        <li><a href="#">Fruits</a></li>
+        <li><a href="#">Légumes</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Frais</a>
+      <ul class="submenu">
+        <li><a href="#">Afficher tous les produits</a></li>
+        <li><a href="#">Charcuterie traditionnelle</a></li>
+        <li><a href="#">Boucherie traditionnelle</a></li>
+        <li><a href="#">Volailles</a></li>
+        <li><a href="#">Charcuterie et boucherie libre service</a></li>
+        <li><a href="#">Poissons et crustacés</a></li>
+        <li><a href="#">Autres</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -1,2 +1,46 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leader</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'home', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <div class="promo-section">
+    <div class="promo-text">
+      <p>Simple, frais et pratique</p>
+      <h1>Faites le plein des produits de base</h1>
+      <p>Économisez sur vos marques préférées</p>
+      <button class="promo-button">Acheter</button>
+    </div>
+    <div class="promo-image-container">
+      <!-- Les images seront ajoutées ici par JavaScript -->
+    </div>
+  </div>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%# <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const imageContainer = document.querySelector('.promo-image-container');
+      const images = [
+        '<%= asset_path("bread3.png") %>
+        <%# '<%= asset_path("bread3.png") %>
+        <%# '<%= asset_path("bread3.png") %>
+      <%# ];
+
+      function getRandomImages(arr, num) {
+        const shuffled = arr.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, num);
+      }
+
+      const randomImages = getRandomImages(images, 3);
+
+      randomImages.forEach(imageSrc => {
+        const imgElement = document.createElement('img');
+        imgElement.src = imageSrc;
+        imageContainer.appendChild(imgElement);
+      });
+    });
+  </script> %>
+</body>
+</html>

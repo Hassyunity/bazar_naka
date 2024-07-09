@@ -1,0 +1,63 @@
+.promo-section {
+  display: flex;
+  background-image: url('img1.jpg');
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.promo-text {
+  max-width: 50%;
+  color: white;
+}
+
+.promo-text p:first-of-type {
+  font-size: 18px;
+  margin: 0;
+}
+
+.promo-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.promo-text p:last-of-type {
+  font-size: 24px;
+  margin: 0;
+}
+
+.promo-button {
+  background-color: #8C0000;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.promo-button:hover {
+  background-color: #e50914;
+}
+
+.promo-images {
+  display: flex;
+  align-items: center;
+}
+
+.promo-image-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.promo-image-container img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px; /* Optionnel, pour arrondir les coins des images */
+}

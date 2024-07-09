@@ -1,66 +1,72 @@
 /* app/assets/stylesheets/application.css */
 
-header h1 {
+/* Styles pour le header */
+header.header {
+  background-image: url('cadi.png');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  /* color: beige; */
+}
+
+header h2 {
   text-align: center;
   font-size: 24px;
   padding: 10px 0;
-  /* background-color: #f8f8f8; */
   margin: 0;
-  color: red;
+  color: #8C0000;
 }
 
-header {
-  background-image: url('cadi.png');
-  background-size: cover; /* Ajuste la taille de l'image pour remplir le header */
-  background-position: center; /* Centre l'image */
-  text-align: center;
-  padding: 40px 0; /* Ajuste le padding selon besoin */
-}
-
+/* Styles pour la barre de navigation */
 nav {
-  background-color: red; /* Orange background */
+  background-color: #8C0000;
   padding: 10px 0;
   text-align: center;
-  color: black;
+  color: white;
+  box-shadow: 0 4px 8px rgba(15, 33, 199, 0.2);
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  gap: 0;
 }
 
 nav ul li {
-  display: inline;
   position: relative;
-  margin: 0 10px;
-  /* border: 2px solid #3399ff; */
-
+  margin: 0;
 }
 
 nav ul li a {
   display: inline-block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 50px;
   text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  border-bottom: 1px solid #ac1017;
 }
 
 nav ul li a:hover {
-  background-color: #cc5200; /* Darker orange on hover */
+  background-color: #aaa;
+  color: black;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ccc 50%, #aaa 50%);
+  font-weight: bold; /* Make text bolder on hover */
+  transform: scale(1.05); /* Slightly enlarge the text */
+  transition: all 0.3s ease; /* Smooth transition effect */
 }
 
-nav ul li:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -10px;
-  height: 50%;
-  border-left: 2px solid #ff6600; /* Orange separator */
-  transform: translateY(-50%) rotate(45deg); /* Incline the separator */
+
+nav ul li a.active {
+  background-color: #aaa;
+  color: white;
+  background: linear-gradient(to bottom, #ccc 50%, #aaa 50%);
 }
 
-nav ul li:first-child:before {
-  display: none; /* Remove separator before the first item */
-}
+

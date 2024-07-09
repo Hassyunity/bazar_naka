@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leader</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'leader', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+   <header class="headers">
+        <div class="logo">
+            <span>Header</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Rechercher un produit, par ex. lait">
+            <button type="submit">
+              <%= image_tag "search.png", alt: "Search" %>
+            </button>
+        </div>
+        <div class="icons">
+            <%# <img src="location-icon.png" alt="Location">
+            <img src="heart-icon.png" alt="Favorites">
+            <img src="cart-icon.png" alt="Cart"> %>
+        </div>
+    </header>
+  </body>
+</html>
