@@ -9,8 +9,10 @@
 }
 
 .promo-text {
+  margin-left: 5%;
   max-width: 50%;
   color: white;
+  font-size: bold;
 }
 
 .promo-text p:first-of-type {
@@ -18,15 +20,9 @@
   margin: 0;
 }
 
-.promo-text h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
 .promo-text p:last-of-type {
   font-size: 24px;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .promo-button {
@@ -43,6 +39,7 @@
 
 .promo-button:hover {
   background-color: #e50914;
+  color: black;
 }
 
 .promo-images {
