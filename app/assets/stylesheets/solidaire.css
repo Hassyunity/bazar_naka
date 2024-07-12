@@ -1,0 +1,63 @@
+.titre {
+  font-size: 33px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 8%;
+}
+
+.gallery {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.gallery td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid #ddd;
+}
+
+.gallery .separator {
+  border-left: 2px solid #ddd;
+  width: 2px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.gallery .price {
+  font-size: 1.5em;
+  color: red;
+}
+
+/* Media queries pour une mise en page réactive */
+@media (max-width: 1200px) {
+  .gallery img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery img {
+    max-width: 60px;
+  }
+}
