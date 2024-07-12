@@ -14,35 +14,50 @@
       <p>Économisez sur vos marques préférées</p>
       <button class="promo-button">Acheter</button>
     </div>
-    <div class="promo-image-container">
-      <!-- Les images seront ajoutées ici par JavaScript -->
-    </div>
   </div>
-      <%= render 'sections/solidaires' %>
-  <div>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  <%# <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const imageContainer = document.querySelector('.promo-image-container');
-      const images = [
-        '<%= asset_path("bread3.png") %>
-        <%# '<%= asset_path("bread3.png") %>
-        <%# '<%= asset_path("bread3.png") %>
-      <%# ];
 
-      function getRandomImages(arr, num) {
-        const shuffled = arr.sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, num);
-      }
+  <div class="impact">
+    <table class="impact">
+      <tr>
+        <td>
+          <%= image_tag "cadis.png", alt: "cadis" %>
+        </td>
+        <td>
+          <p class="para_1">Impact direct</p><br>
+          <p class="para_2">Sur le terrain</p>
+        </td>
 
-      const randomImages = getRandomImages(images, 3);
+        <td class="separator">|</td>
 
-      randomImages.forEach(imageSrc => {
-        const imgElement = document.createElement('img');
-        imgElement.src = imageSrc;
-        imageContainer.appendChild(imgElement);
-      });
-    });
-  </script> %>
+        <td>
+          <%= image_tag "cadis.png", alt: "cadis" %>
+        </td>
+        <td>
+          <p class="para_1">Aide ciblée</p><br>
+          <p class="para_2">Projets locaux</p>
+        </td>
+
+        <td class="separator">|</td>
+
+        <td>
+          <%= image_tag "cadis.png", alt: "cadis" %>
+        </td>
+        <td>
+          <p class="para_1">Engagement</p><br>
+          <p class="para_2">Transparence financière</p>
+        </td>
+
+        <td class="separator">|</td>
+
+        <td>
+          <%= image_tag "cadis.png", alt: "cadis" %>
+        </td>
+        <td>
+          <p class="para_1">Suivi</p><br>
+          <p class="para_2">Telecharger notre rapport</p>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
