@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sections/index'
+  get 'sections/create'
+  get 'sections/update'
+  get 'sections/delete'
   # get 'pages/home'
   # get 'pages/comment_payer'
   # get 'pages/nouvaute'
