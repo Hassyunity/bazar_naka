@@ -13,11 +13,20 @@
   border-collapse: collapse;
 }
 
+.section {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.gallery tr {
+  border-bottom: 5px solid #ddd;
+}
+
 .gallery td {
   padding: 10px;
   text-align: center;
   vertical-align: top;
-  border: 1px solid #ddd;
 }
 
 .gallery .separator {
@@ -30,6 +39,7 @@
   height: auto;
   max-width: 150px;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .gallery .price {
