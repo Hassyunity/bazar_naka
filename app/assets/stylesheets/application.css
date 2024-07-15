@@ -1,72 +1,80 @@
-/* app/assets/stylesheets/application.css */
-
-/* Styles pour le header */
-header.header {
-  background-image: url('cadi.png');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 40px 0;
-  /* color: beige; */
+body {
+  margin: 10px;
+  font-family: Arial, sans-serif;
 }
 
-header h2 {
-  text-align: center;
-  font-size: 24px;
-  padding: 10px 0;
-  margin: 0;
-  color: #8C0000;
-}
-
-/* Styles pour la barre de navigation */
-nav {
-  background-color: #8C0000;
-  padding: 10px 0;
-  text-align: center;
+header {
+  background-color: black;
+  /* border-bottom: 1px solid #ccc; */
   color: white;
-  box-shadow: 0 4px 8px rgba(15, 33, 199, 0.2);
 }
 
-nav ul {
-  list-style-type: none;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #ffcc00;
+  border: 1px solid #ffcc00;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 0;
 }
 
-nav ul li {
-  position: relative;
-  margin: 0;
+.nav-links li {
+  margin: 0 10px;
 }
 
-nav ul li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 50px;
+.nav-links a {
   text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 18px;
-  border-bottom: 1px solid #ac1017;
-}
-
-nav ul li a:hover {
-  background-color: #aaa;
-  color: black;
-  border-radius: 10px;
-  background: linear-gradient(to bottom, #ccc 50%, #aaa 50%);
-  font-weight: bold; /* Make text bolder on hover */
-  transform: scale(1.05); /* Slightly enlarge the text */
-  transition: all 0.3s ease; /* Smooth transition effect */
-}
-
-
-nav ul li a.active {
-  background-color: #aaa;
   color: white;
-  background: linear-gradient(to bottom, #ccc 50%, #aaa 50%);
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px; /* Adjust for space for the border */
 }
 
+.nav-links a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid green; /* Adds a green line under the text */
+}
 
+.cart {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  /* border: 2px solid white; */
+}
