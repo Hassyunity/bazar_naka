@@ -7,81 +7,43 @@
   <%= stylesheet_link_tag 'solidaire', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-  <h1 class="titre">Nos Promotions:</h1>
+  <h1 class="titre">Nos Categorie de produits:</h1>
   <table class="gallery">
     <tr>
       <td class="promotion">
         <div class="section">
           <%= image_tag "bain_de_bouche.jpg", class: "descr", alt: "Pain complet" %>
-          <p>BAIN DE BOUCHE 150ML</p>
-          <p class="price">5000Ar</p>
-          <div class="quantity-selector">
-              <button class="decrease">-</button>
-              <input type="text" class="quantity" value="0" readonly>
-              <button class="increase">+</button>
-            </div>
-            <button class="add-to-cart">Ajouter au panier</button>
-          </div>
+          <p>Hygiène et Beauté</p>
+          <%# <p class="price">5000Ar</p> %>
         </div>
       </td>
       <%# <td class="separator"></td> %>
       <td class="promotion">
         <div class="section">
           <%= image_tag "chips.jpg", class: "descr", alt: "Pain complet", title: "CHIPS LEGERES(125G" %>
-          <p>CHIPS LEGERES(125G)</p>
-          <p class="price">10 900Ar</p>
-          <div class="quantity-selector">
-              <button class="decrease">-</button>
-              <input type="text" class="quantity" value="0" readonly>
-              <button class="increase">+</button>
-            </div>
-            <button class="add-to-cart">Ajouter au panier</button>
-          </div>
+          <p>Fruits et légumes</p>
         </div>
       </td>
       <%# <td class="separator"></td> %>
       <td class="promotion">
         <div class="section">
           <%= image_tag "cereal.jpg",  class: "descr", alt: "Pain complet" %>
-          <p>BISCUIT PETIT DEJEUNER</p>
-          <p class="price">24 500Ar</p>
-          <div class="quantity-selector">
-              <button class="decrease">-</button>
-              <input type="text" class="quantity" value="0" readonly>
-              <button class="increase">+</button>
-            </div>
-            <button class="add-to-cart">Ajouter au panier</button>
-          </div>
+          <p>Viandes et poissons</p>
         </div>
       </td>
       <%# <td class="separator"></td> %>
       <td class="promotion">
         <div class="section">
           <%= image_tag "avocat.jpg",  class: "descr", alt: "Pain complet" %>
-          <p>Avocats(kg)</p>
-          <p class="price">4 200 Ar</p>
-          <div class="quantity-selector">
-              <button class="decrease">-</button>
-              <input type="text" class="quantity" value="0" readonly>
-              <button class="increase">+</button>
-            </div>
-            <button class="add-to-cart">Ajouter au panier</button>
-          </div>
+          <p>Boisson</p>
         </div>
       </td>
       <%# <td class="separator"></td> %>
       <td class="promotion">
         <div class="section">
             <%= image_tag "cat.jpg",  class: "descr", alt: "Pain complet" %>
-            <p>BOULETTES EN SAUCE</p>
-            <p class="price">5 500Ar</p>
-            <div class="quantity-selector">
-              <button class="decrease">-</button>
-              <input type="text" class="quantity" value="0" readonly>
-              <button class="increase">+</button>
-            </div>
-            <button class="add-to-cart">Ajouter au panier</button>
-          </div>
+            <p>Épicerie</p>
+        </div>
         </td>
       </td>
     </tr>

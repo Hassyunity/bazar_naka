@@ -19,11 +19,13 @@
   border: 1px solid #ddd;
 }
 
-.gallery tr {
+.plus {
   border-bottom: 5px solid #ddd;
+  text-align: center;
+  margin-left: 50%;
 }
 
-.gallery td {
+.gallery td.promotion {
   padding: 10px;
   text-align: center;
   vertical-align: top;
