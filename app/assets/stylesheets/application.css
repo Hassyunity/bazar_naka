@@ -1,3 +1,4 @@
+/* Style global */
 body {
   margin: 10px;
   font-family: Arial, sans-serif;
@@ -5,12 +6,13 @@ body {
 
 header {
   background-color: black;
-  /* border-bottom: 1px solid #ccc; */
   color: white;
 }
 
+/* Barre de navigation */
 .navbar {
   display: flex;
+  flex-wrap: wrap; /* Permet l'encapsulation des éléments de la barre de navigation sur les petits écrans */
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
@@ -26,13 +28,16 @@ header {
   margin-right: 10px;
 }
 
+/* Barre de recherche */
 .search-bar {
   display: flex;
   align-items: center;
+  margin: 10px 0; /* Ajuste la marge pour un meilleur espacement */
 }
 
 .search-bar input {
-  width: 300px;
+  width: 100%; /* Largeur totale pour les petits écrans */
+  max-width: 300px; /* Limite la largeur sur les grands écrans */
   padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
@@ -46,9 +51,11 @@ header {
   cursor: pointer;
 }
 
+/* Liens de navigation */
 .nav-links {
   list-style: none;
   display: flex;
+  flex-wrap: wrap; /* Permet l'encapsulation des liens de navigation sur les petits écrans */
   align-items: center;
   margin: 0;
   padding: 0;
@@ -63,18 +70,37 @@ header {
   color: white;
   font-weight: bold;
   position: relative;
-  padding-bottom: 5px; /* Adjust for space for the border */
+  padding-bottom: 5px; /* Ajuste pour l'espace pour la bordure */
 }
 
 .nav-links a:hover {
   color: #ffcc00;
-  border-bottom: 2px solid green; /* Adds a green line under the text */
+  border-bottom: 2px solid green; /* Ajoute une ligne verte sous le texte */
 }
 
 .cart {
-  display: flex;
-  align-items: center;
   width: 30px;
   height: 30px;
-  /* border: 2px solid white; */
+}
+
+/* Media Queries pour le design réactif */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Empile les éléments verticalement sur les petits écrans */
+    align-items: flex-start; /* Aligne les éléments au début sur les petits écrans */
+  }
+
+  .search-bar {
+    width: 100%; /* Largeur totale sur les petits écrans */
+    margin: 10px 0; /* Ajuste la marge pour un meilleur espacement */
+  }
+
+  .nav-links {
+    width: 100%; /* Largeur totale sur les petits écrans */
+    justify-content: space-between; /* Étalonne les éléments de manière uniforme */
+  }
+
+  .nav-links li {
+    margin: 5px 0; /* Ajuste la marge pour un meilleur espacement */
+  }
 }

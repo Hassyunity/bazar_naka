@@ -4,47 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galerie Slider</title>
-  <%= stylesheet_link_tag 'solidaire', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag 'categorie', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-  <h1 class="titre">Nos Categorie de produits:</h1>
-  <table class="gallery">
+  <h1 class="title">Nos Categorie de produits:</h1>
+  <table class="categories">
     <tr>
-      <td class="promotion">
-        <div class="section">
-          <%= image_tag "bain_de_bouche.jpg", class: "descr", alt: "Pain complet" %>
-          <p>Hygiène et Beauté</p>
-          <%# <p class="price">5000Ar</p> %>
-        </div>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "natural-elements-spa-with-beauty-cream.jpg", alt: "Pain complet" %>
+            <p>Hygiène et Beauté</p>
+          </div>
+        <% end %>
       </td>
-      <%# <td class="separator"></td> %>
-      <td class="promotion">
-        <div class="section">
-          <%= image_tag "chips.jpg", class: "descr", alt: "Pain complet", title: "CHIPS LEGERES(125G" %>
-          <p>Fruits et légumes</p>
-        </div>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "chips.jpg", alt: "Pain complet", title: "CHIPS LEGERES(125G" %>
+            <p>Fruits et légumes</p>
+          </div>
+        <% end %>
       </td>
-      <%# <td class="separator"></td> %>
-      <td class="promotion">
-        <div class="section">
-          <%= image_tag "cereal.jpg",  class: "descr", alt: "Pain complet" %>
-          <p>Viandes et poissons</p>
-        </div>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "cereal.jpg",  alt: "Pain complet" %>
+            <p>Viandes et poissons</p>
+          </div>
+        <% end %>
       </td>
-      <%# <td class="separator"></td> %>
-      <td class="promotion">
-        <div class="section">
-          <%= image_tag "avocat.jpg",  class: "descr", alt: "Pain complet" %>
-          <p>Boisson</p>
-        </div>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "avocat.jpg",  alt: "Pain complet" %>
+            <p>Boisson</p>
+          </div>
+        <% end %>
       </td>
-      <%# <td class="separator"></td> %>
-      <td class="promotion">
-        <div class="section">
-            <%= image_tag "cat.jpg",  class: "descr", alt: "Pain complet" %>
-            <p>Épicerie</p>
-        </div>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+              <%= image_tag "cat.jpg",  alt: "Pain complet" %>
+              <p>Épicerie</p>
+          </div>
+        <% end %>
         </td>
+      </td>
+    </tr>
+    <tr class="separators">
+      <td>
+      </td>
+    </tr>
+    <%# second column %>
+    <tr>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "bain_de_bouche.jpg", alt: "Pain complet" %>
+            <p>Produits de nettoyage</p>
+          </div>
+        <% end %>
+      </td>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "chips.jpg", alt: "Pain complet", title: "CHIPS LEGERES(125G" %>
+            <p>Produits laitiers</p>
+          </div>
+        <% end %>
+      </td>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "product/chocolate-puff-pastry-croissant-chocolate-eclair-sweet-raisin-roll.jpg",  alt: "Pain complet" %>
+            <p>Boulangerie et pâtisserie</p>
+          </div>
+        <% end %>
+      </td>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+            <%= image_tag "avocat.jpg",  alt: "Pain complet" %>
+            <p>Animaux</p>
+          </div>
+        <% end %>
+      </td>
+      <td class="categorie">
+        <%= link_to root_path do %>
+          <div class="liste">
+              <%= image_tag "cat.jpg",  alt: "Pain complet" %>
+              <p>Bio et diététique</p>
+          </div>
+        <% end %>
       </td>
     </tr>
     <tr class="plus">
@@ -53,7 +105,7 @@
       <td>
       </td>
       <td>
-        <button class="promo-button">Voir plus</button>
+        <%# <button class="promo-button">Voir plus</button> %>
       </td>
     </tr>
   </table>
