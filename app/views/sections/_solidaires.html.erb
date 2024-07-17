@@ -7,10 +7,10 @@
   <%= stylesheet_link_tag 'solidaire', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-  <h1 class="titre">Nos actions solidaires:</h1>
+  <h1 class="titre">Vente flash:</h1>
   <table class="gallery">
     <tr>
-      <td>
+      <td class="promotion">
         <div class="section">
           <%= image_tag "bain_de_bouche.jpg", class: "descr", alt: "Pain complet" %>
           <p>BAIN DE BOUCHE 150ML</p>
@@ -24,8 +24,7 @@
           </div>
         </div>
       </td>
-      <%# <td class="separator"></td> %>
-      <td>
+      <td class="promotion">
         <div class="section">
           <%= image_tag "chips.jpg", class: "descr", alt: "Pain complet", title: "CHIPS LEGERES(125G" %>
           <p>CHIPS LEGERES(125G)</p>
@@ -39,8 +38,7 @@
           </div>
         </div>
       </td>
-      <%# <td class="separator"></td> %>
-      <td>
+      <td class="promotion">
         <div class="section">
           <%= image_tag "cereal.jpg",  class: "descr", alt: "Pain complet" %>
           <p>BISCUIT PETIT DEJEUNER</p>
@@ -54,8 +52,7 @@
           </div>
         </div>
       </td>
-      <%# <td class="separator"></td> %>
-      <td>
+      <td class="promotion">
         <div class="section">
           <%= image_tag "avocat.jpg",  class: "descr", alt: "Pain complet" %>
           <p>Avocats(kg)</p>
@@ -69,8 +66,7 @@
           </div>
         </div>
       </td>
-      <%# <td class="separator"></td> %>
-      <td>
+      <td class="promotion">
         <div class="section">
             <%= image_tag "cat.jpg",  class: "descr", alt: "Pain complet" %>
             <p>BOULETTES EN SAUCE</p>
@@ -83,6 +79,15 @@
             <button class="add-to-cart">Ajouter au panier</button>
           </div>
         </td>
+      </td>
+    </tr>
+    <tr class="plus">
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+        <button class="promo-button">Voir plus</button>
       </td>
     </tr>
   </table>
