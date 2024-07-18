@@ -1,0 +1,2 @@
+class Boisson < ApplicationRecord
+end

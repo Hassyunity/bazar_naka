@@ -1,0 +1,2 @@
+module NettoyageHelper
+end

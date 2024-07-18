@@ -1,0 +1,2 @@
+module ViandeHelper
+end

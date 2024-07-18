@@ -1,0 +1,2 @@
+class Laitier < ApplicationRecord
+end

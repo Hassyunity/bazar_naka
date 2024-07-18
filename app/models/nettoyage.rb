@@ -1,0 +1,2 @@
+class Nettoyage < ApplicationRecord
+end

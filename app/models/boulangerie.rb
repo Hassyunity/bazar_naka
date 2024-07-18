@@ -1,0 +1,2 @@
+class Boulangerie < ApplicationRecord
+end
