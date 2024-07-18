@@ -1,0 +1,2 @@
+class Epicerie < ApplicationRecord
+end

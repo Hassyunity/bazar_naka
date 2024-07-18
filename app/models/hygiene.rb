@@ -1,0 +1,2 @@
+class Hygiene < ApplicationRecord
+end
