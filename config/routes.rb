@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'pages#home'
 
-  get 'ping', to: 'cron#ping'
-
   get 'comment_payer', to: 'pages#comment_payer'
   get 'nouvaute', to: 'pages#nouvaute'
   get 'promotion', to: 'pages#promotion'
