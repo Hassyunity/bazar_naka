@@ -37,4 +37,3 @@
 /config/credentials/production.key
 
 #ignore database.yml
-/config/database.yml
