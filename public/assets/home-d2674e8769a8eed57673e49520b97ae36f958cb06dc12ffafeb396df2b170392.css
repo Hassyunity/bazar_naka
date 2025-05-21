@@ -1,0 +1,113 @@
+.promo-section {
+  display: flex;
+  background-image: url(/assets/img1-7258afe4c2f9bce947fa2bc48ef21f655ad8d045d204706d4634bb0a29cbd0b8.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.promo-text {
+  margin-left: 5%;
+  max-width: 50%;
+  color: white;
+  font-size: bold;
+}
+
+.promo-text p:first-of-type {
+  font-size: 18px;
+  margin: 0;
+}
+
+.promo-text p:last-of-type {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.promo-button {
+  background-color: #8C0000;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.promo-button:hover {
+  background-color: #e50914;
+  color: black;
+}
+
+.promo-images {
+  display: flex;
+  align-items: center;
+}
+
+.promo-image-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.promo-image-container img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px; /* Optionnel, pour arrondir les coins des images */
+}
+
+ /* css for impact section  */
+.impact {
+  width: 100%;
+  margin: 20px 0;
+  color: #8C0000;
+  clear: both; /* Assurez-vous que cette section ne chevauche pas les flottants précédents */
+}
+
+.impact table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.impact td {
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.impact img {
+  width: 30px;
+  height: auto;
+}
+
+.impact td img {
+  display: block;
+  margin: 0 auto;
+}
+
+.impact td p {
+  margin: 0.2px 0;
+}
+
+.separator {
+  font-size: 50px;
+  color: black;
+  padding: 0 10px;
+}
+
+.para_1 {
+  font-size: 20px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.para_2 {
+  font-size: 15px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}

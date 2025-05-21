@@ -1,0 +1,139 @@
+.titre {
+  font-size: 33px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 8%;
+}
+
+.gallery {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.section {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.plus {
+  border-bottom: 5px solid #ddd;
+  text-align: center;
+  margin-left: 50%;
+}
+
+.gallery td.promotion {
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  max-height: 50px;
+}
+
+.gallery .separator {
+  border-left: 2px solid #ddd;
+  width: 2px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.gallery .price {
+  font-size: 1.5em;
+  color: red;
+}
+
+/* Media queries pour une mise en page réactive */
+@media (max-width: 1200px) {
+  .gallery img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery img {
+    max-width: 60px;
+  }
+}
+
+/* Styles pour la section avec les boutons */
+.section {
+  text-align: center;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.quantity-selector .increase .decrease {
+  background-color: #8C0000;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.quantity-selector .quantity {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
+}
+
+.add-to-cart {
+  background-color: #8C0000;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Effet d'enfoncement pour les boutons lorsqu'ils sont cliqués */
+.quantity-selector button:active, .add-to-cart:active {
+  transform: scale(0.95);
+}
+
+/* Style de base pour l'image */
+.descr {
+  transition: opacity 0.3s ease;
+}
+
+/* Style pour le texte de description */
+.descr:hover {
+  opacity: 0.8;
+}
+
+.descr:hover::after {
+  content: attr(title);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.descr:hover::after {
+  opacity: 1;
+}
