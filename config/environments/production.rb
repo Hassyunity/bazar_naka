@@ -15,7 +15,7 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
 
   # Precompile assets before deployment, do not fallback to runtime compilation.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # Active Storage configuration
   config.active_storage.service = :local
